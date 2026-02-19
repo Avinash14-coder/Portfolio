@@ -4,7 +4,7 @@ import { SiTailwindcss } from 'react-icons/si';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-24 pb-12 relative overflow-hidden bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-purple-900/40 via-[#050209] to-[#050209]">
+    <section id="home" className="py-32 flex items-center justify-center relative overflow-hidden bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-purple-900/40 via-[#050209] to-[#050209]">
       
       {/* Background Glow Blobs */}
       <div className="absolute top-20 left-20 w-72 h-72 bg-purple-600/30 rounded-full blur-[100px]"></div>
