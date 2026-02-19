@@ -4,7 +4,7 @@ import { SiTailwindcss } from 'react-icons/si';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-purple-900/40 via-[#050209] to-[#050209]">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-24 relative overflow-hidden bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-purple-900/40 via-[#050209] to-[#050209]">
       
       {/* Background Glow Blobs */}
       <div className="absolute top-20 left-20 w-72 h-72 bg-purple-600/30 rounded-full blur-[100px]"></div>
@@ -12,8 +12,8 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
         
-        {/* Left: Text Content */}
-        <div className="space-y-6 text-center md:text-left">
+        {/* Left: Text Content (Pushed to BOTTOM on Mobile, stays LEFT on Desktop) */}
+        <div className="space-y-6 text-center md:text-left order-2 md:order-1">
           <div className="inline-block px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-sm mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 font-semibold">
               Full Stack Developer (AIML & IoT)
@@ -80,13 +80,13 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right: Profile with Orbiting Icons */}
-        <div className="relative flex justify-center items-center mt-10 md:mt-0">
+        {/* Right: Profile with Orbiting Icons (Pushed to TOP on Mobile, stays RIGHT on Desktop) */}
+        <div className="relative flex justify-center items-center mb-10 md:mb-0 order-1 md:order-2">
           {/* Glowing Ring */}
           <div className="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] border border-purple-500/30 rounded-full animate-spin-slow"></div>
           <div className="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full bg-purple-500/5 blur-3xl"></div>
 
-          {/* Profile Image (Reverted to rounded-full) */}
+          {/* Profile Image */}
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl z-10">
             <img src="/assets/profile.png" alt="Avinash" className="w-full h-full object-cover" />
           </div>
